@@ -35,9 +35,59 @@
           console.log(full_name);
           full_name=full_name.toLowerCase().trim()
           console.log(full_name.includes("@") && full_name.includes("."));
-          console.log(full_name.endsWith("akinyi"));
-          
-      
+          console.log(full_name.endsWith("akinyi"));  
 </script>    
+
+<h1>ARRAYS</h1>
+
+<script>
+    
+    let arr=[1,2,3,4,5,"Shalyne",false,[7,8,[10,30,['Mark','Sharon',true]]],11];
+    console.log(arr [7][2][2][2]);
+
+</script>
+<script>
+//updating elements in an array. ARRAY METHODS
+let arry=[1,2,"Shalyne Akinyi"]
+arry[2]=['Sharon Akinyi']
+console.log(arry)
+
+//Determine the size of an array-No of elements in an array
+let size=arr.length
+console.log("Array Size",size)
+
+//Add elements at the end of an array
+arry.push(15,16,20,false,"Kevin")
+console.log("pushed array",arry)
+
+//Add elements at the start of an array
+arry.unshift("html","CSS")
+console.log("front array",arry)
+
+//Remove elements at the end of an array
+arry.pop()
+console.log("removal of last element",arry)
+
+
+//Remove elements at the start of an array
+arry.shift();
+console.log("shifted arry",arry)
+
+//
+ arry.reverse()
+ console.log(arry)
+
+ //last occurence of an element in a array
+ console.log(arry.lastIndexOf(90))
+
+ console.log(arry.includes("Python"))
+
+  //concat-Join 2 arrays 
+  let arry1=[1,2,3,4]
+  let arry2=[5,6.7,8]
+  let result=arry1.concat()
+
+
+</script>
 </body>
 </html>

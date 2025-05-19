@@ -1,0 +1,49 @@
+JAVA SCRIPT -
+JS CODE MUST BE INSIDE A SCRIPT <SCRIPT>INSIDE HERE JS CODE </SCRIPT>
+    -PRogramming language  we use to create dynamic and interactive web pages 
+JS offers user interactivity and reactivity.
+
+language that runs on the browser ON JS engines e.g V8,SpiderMonkey
+
+INTERACTIVITY-enabling a user to interact with a webpage,e.g click,scrolling, submit,typing =listen to user events
+REACTIVITY- Making our pages dynamic where a page changes by itself based on data without full reloads.
+
+VARIABLE- NAMED CONTAINER USED TO STORE VALUES: 
+HOW TO DECLARE VARIABLES USE; THE BELOW 
+            LET- allows you to resign values to variables 
+            CONST-Constant -NO reassignement
+            VAR-Outdated and replaced by LET-FIND OUT WHY
+JS DATA TYPES: Strings,Numbers,Booleans,
+
+JAVA SCRIPT ARRAYS:
+    -An array is a special variable/data structure used to store/hold more than 1 value at a time.-This array is equivalent to a list in PYTHON.
+        PROPERTIES:
+            1.-they are ordered.-elements can be accessed with index which is 0-based.
+            2.-its Mutable-it can be chnaged/altered eg change in value, size where increase or decrease,update
+            3.-stores multiple items of different data types -can store string, numbers,booleans,bigint,list
+ARRAYS are dynamic which means you can add,remove or modify elements-elements are comma separated.
+
+
+                WHY USE ARRAYS:
+    -Cause it can store multiple items,have ordered items, can manipulate multiple items, do iteration,
+
+SYNTAX- let array_name=[ values ]    
+
+ARRAY- ONE DIMENSIONAL (1DR) =[1,2,"JOHN DOE"]
+^& MULTIDIMENSIONAL(2DRA)=
+
+                    ARRAY OPERATIONS
+    -Actions that can be perfomed to manipulate arrays/This operations can range from creating arrays,updating values, adding or removing values e.tc        
+   1. Accessing Elements in an array      
+   2. Update or Modify elements in an array- use indexes
+   3. Checked the size of an array
+   4. Add elements to an array
+            -add elements at the end.-(.push)
+            -add elements at the start of an array-(.unshift)
+   5. Remove elements from an array
+            -Remove element at the end of an array(.pop)
+            -remove element at the start of an array(.shift)     
+
+TASK -SLIDE 53,69,70 
+USE SPLICE TO ADD AND REPLACE ELEMENTS
+USE SORT -GIVE ME THE OBSERVATION ON WHAT HAPPENS ON SORTING NUMBERS.1000,200,300,600               
