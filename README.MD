@@ -46,4 +46,53 @@ ARRAY- ONE DIMENSIONAL (1DR) =[1,2,"JOHN DOE"]
 
 TASK -SLIDE 53,69,70 
 USE SPLICE TO ADD AND REPLACE ELEMENTS
-USE SORT -GIVE ME THE OBSERVATION ON WHAT HAPPENS ON SORTING NUMBERS.1000,200,300,600               
+USE SORT -GIVE ME THE OBSERVATION ON WHAT HAPPENS ON SORTING NUMBERS.1000,200,300,600          
+
+
+REMOVING ELEMENTS SPLICE()
+    1.Can Remove
+    2. Can add 
+    3. can replace elements
+
+
+
+OBJECTS
+    Are data structures used to store values of data in key value pairs,equivalent to a dictionary in python.e.g key:Value
+Key: value -they combine to form a property.
+CHARACTERISTIC OF OBJECTS
+        1.Store data in Key value pairs.
+        2.They are Mutable.
+        3.object keys are essentially strings
+        4.Values can be of any data type.
+        5.They have methods and operations 
+
+KEYS:-Identifiers of the property.
+        1.no spacing
+            -if your key is to have spaces it needs to be in string form
+            full name:"John Doe" - Invalid KEY
+            "full name":"John Doe"   - VALID KEY
+        2.can contain ,letters,digits and underscore and dollar sign.
+        3.Can only start with _or letter.
+VALUES:- These are data stored in the above property.
+
+
+WHY USE OBJECTS/DICT INSTEAD OF ARRAYS:
+    1.You can group related data in a single container
+    2.use it to store complex structured data.
+    3.Represent /model real world entities.
+OBJECTS can be created in 2 ways:
+    1.Object literal Syntax like the first one in the objects.html/creates key value pairs-RECOMMENDED ONE
+    2.Using Object Constructor- built in object() constructor
+ACCESSING PROPERTIES:
+    1.Using dot(.)notation-
+    advantage:simpler-
+    disadvantage: cant access values whose keys are in string form and are spaced e.g full name:"Akinyi"
+
+    2.uing bracket notation-dynamic
+    object["key"]-can access any key
+
+OBJECT METHODS-Operations you can carry out on an object
+object.keys(object)  - will see name of the keys
+object.values(object) -will see the values of your properties
+object.entries(object) - key value pairs- all properties
+N/B all data above is stored in ARRAYS

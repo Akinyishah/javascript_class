@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>JAVA SCRIPT OBJECTS</div>
+
+<script>
+let person={
+    name:"Shalyne",
+    age:32,
+    height:"168cm",
+    job:"Software Developer",
+    isMarried:false,
+    "full address":"Kisumu"
+}
+
+console.log(person.job)
+let height=person.height//use of . notation
+console.log(height)
+console.log(person["age"]) //use of bracket notation.
+console.log(person["full address"])
+
+
+</script>
+<script>
+let person1={
+    name:"Shalyne",
+    age:32,
+    height:"168cm",
+    job:"Software Developer",
+    isMarried:false,
+    "full address":"Kisumu"
+}
+let key="name"
+console.log(person1.key)// will start looking for a key which is not there. cant use.notation and use the keys
+console.log(person1[key])==console.log(person[name]) //use of bracket notation
+
+
+//NESTED OBJECT:
+let user = {
+        name: "Alice",
+        hobbies: ["cycling", "painting"],
+        posts: [
+          {
+            id: 1,
+            title: "My first post",
+            comments: [
+              { id: 101, text: "Great post!" },
+              { id: 102, text: "Thanks for sharing." },
+            ],
+          },
+          {
+            id: 2,
+            title: "Another day",
+            comments: [],
+          },
+        ],
+      };
+
+    let keys=object.keys(user)
+    let values=object.values(user)
+    let entries=object.entries(user)
+    console.log(keys)
+    console.log(values)
+    console.log(entries)
+
+
+
+</script>
+
+
+
+</body>
+</html>

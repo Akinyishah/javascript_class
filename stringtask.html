@@ -40,44 +40,37 @@ console.log(sss.length)
 
 //PAGE 69-70
 
-1. //Create an Array Create an array named colors with the following elements: 'red', 'green', 'blue'.
-let colors=['red','green','blue']
+1. //Create  an array named colors with the following elements: 'red', 'green', 'blue'.
+let colors=['red','green','blue'];
+colors[2]=['pink'];
 console.log(colors)
-
 
 2.//Access and Modify Array Elements
 //Given the array colors, access the second element and change it to 'pink'. 
 //Then, display the modified array.
-colors[2]=['pink']
-console.log(colors)
-
-
-
-
-
 
 3.//Determine the Length of an Array Given the array colors, determine its length 
 //and store it in a variable lengthOfColors. Then, display lengthOfColors.
-
-
-
-
+let lengthOfColors=colors.length;
+console.log(lengthOfColors)
 
 
 4.//Use .pop() Method Given the array colors, use the .pop() method to remove 
 // the last element from the array. Then, display the modified array.
+colors.pop();
+console.log(colors)
 
 
-
-
-
-
-
-5.1//Combine Arrays Given two arrays arr1 and arr2, combine them into a single array combinedArray using the .concat() method. Then, remove the first element from combinedArray using the .shift() method. 
+5.1//Combine Arrays Given two arrays arr1 and arr2, combine them into a single array 
+// combinedArray using the .concat() method. Then, 
+// remove the first element from combinedArray using the .shift() method. 
 // Finally, display the modified combinedArray.
-
-
-
+let arr1= [1,2,3,4,5,"Shalyne",false];
+let arr2= [7,8,10,30,'Mark','Sharon',true];
+let combined_arr=arr1.concat(" ",arr2)
+console.log(combined_arr)
+combined_arr.shift();
+console.log(combined_arr)
 
 5.2//Extract Subarray Given an array “sourceArray”, extract a subarray “extractedArray” 
 // from index 2 to index 4 using the .slice() method. Then, 
