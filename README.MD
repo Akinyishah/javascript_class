@@ -92,7 +92,7 @@ ACCESSING PROPERTIES:
     object["key"]-can access any key
 
 OBJECT METHODS-Operations you can carry out on an object
-object.keys(object)  - will see name of the keys
-object.values(object) -will see the values of your properties
-object.entries(object) - key value pairs- all properties
+Object.keys(object)  - will see name of the keys
+Object.values(object) -will see the values of your properties
+Object.entries(object) - key value pairs- all properties
 N/B all data above is stored in ARRAYS

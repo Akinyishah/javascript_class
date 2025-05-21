@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>OBJECT TASK</h3>
+
+    <script>
+//Create a new file called objectTask and attempt the below questions:
+//my_object= [23, “Jane”, 560, [“Lesson”, “Maths”, {“currency” : “KES”}], 987, 76,”John”]
+//Display:1. KES,2. 560,3. Maths
+
+let my_object=[23,"Jane", (560), 
+["Lesson", "Maths",{"currency" : "KES"}], 
+987, (76,"John")
+
+]
+console.log(my_object[3][2]["currency"])
+
+console.log(my_object[2])
+
+console.log(my_object[3][1])
+
+
+//4. In the object with the key currency, add another key “amount” with value 90
+console.log(my_object[3][2]["amount"]=90)
+//console.log(my_object[3][2].entries({"amount":90,"mode":"Visa"}))
+
+
+
+// //5. Reverse 987 to 789 without using an inbuilt -method or Assigning 789 manually.
+//     // Hint: arrays can be reversed using reverse() functions
+let num=my_object[4]
+let text=num.toString() 
+console.log(num)
+
+
+// #1,identify location of 987
+// #2.convert to a string
+// #3.now reverse the string and convert it back to INT
+// #my_ds[4]=int(str(my_ds[4])[::-1])- can also be used to change on 1 line
+// my_ds[4]=str(my_ds[4])
+// my_ds[4]=my_ds[4][::-1]
+// my_ds[4]=int(my_ds[4])
+// print(my_ds)
+// print(type(my_ds[4]))
+
+
+//6. Change the name “John” to “Jane” . 
+my_object[5]
+my_object[5]=Array(my_object[5])
+my_object[5][-1]='jane'
+my_object[5]=
+console.log(my_object[5])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #6. Change the name “John” to “Jane” .
+// # Convert the tuple to a list
+// #locate John
+// print(my_ds[5])
+// #convert it to a list
+// my_ds[5]=list(my_ds[5]) 
+// #modify
+// my_ds[5][-1]='jane'
+// #convert back to a tuple 
+// my_ds[5]=tuple(my_ds[5])
+// print(my_ds)
+// print(type(my_ds[5]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

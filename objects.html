@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -37,10 +37,10 @@ let person1={
 }
 let key="name"
 console.log(person1.key)// will start looking for a key which is not there. cant use.notation and use the keys
-console.log(person1[key])==console.log(person[name]) //use of bracket notation
+console.log(person1[key])////use of bracket notation
 
 
-//NESTED OBJECT:
+//NESTED OBJECT: COMPLICATED ONE CHECK ARRAYS AND APPLY INDEXES TO SEE "THANKS FOR SHARING"
 let user = {
         name: "Alice",
         hobbies: ["cycling", "painting"],
@@ -60,10 +60,11 @@ let user = {
           },
         ],
       };
+      console.log(user.posts[0].comments[1].text)
 
-    let keys=object.keys(user)
-    let values=object.values(user)
-    let entries=object.entries(user)
+    let keys=Object.keys(user)
+    let values=Object.values(user)
+    let entries=Object.entries(user)
     console.log(keys)
     console.log(values)
     console.log(entries)
