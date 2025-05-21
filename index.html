@@ -52,6 +52,9 @@ let arry=[1,2,"Shalyne Akinyi"]
 arry[2]=['Sharon Akinyi']
 console.log(arry)
 
+//Slice Divides an arrays into Portins 
+//
+
 //Determine the size of an array-No of elements in an array
 let size=arr.length
 console.log("Array Size",size)
@@ -64,25 +67,26 @@ console.log("pushed array",arry)
 arry.unshift("html","CSS")
 console.log("front array",arry)
 
-//Remove elements at the end of an array
+//Remove elements at the end of an array and returns the elemnt TRUE.
 arry.pop()
 console.log("removal of last element",arry)
 
 
-//Remove elements at the start of an array
+//Remove elements at the start of an array REMOVE ELEMENT AT INDEX-0
 arry.shift();
 console.log("shifted arry",arry)
 
-//
+//Changes the order of the array  element for index 0 will the index-1
  arry.reverse()
  console.log(arry)
 
- //last occurence of an element in a array
+ //returns the index of the last occurence of an element in a array
  console.log(arry.lastIndexOf(90))
 
+ //checks if an element is contained in an array.
  console.log(arry.includes("Python"))
 
-  //concat-Join 2 arrays 
+  //concat-Join 2 arrays /combines arrays into a single array
   let arry1=[1,2,3,4]
   let arry2=[5,6.7,8]
   let result=arry1.concat()
@@ -100,17 +104,15 @@ console.log(vegies)
 //Splice() Adding elements-1.starting point,-where you want to add e.g start at index 2 will be where 3 is 
 let numbers=[1,2,3,4,5,];
 numbers.splice(2,0,6,7);
+
 //starting point,how many to delete if its 0 it will not delete it will add 6&7, elements to be added
+numbers.splice(2,0,6,7);
 console.log(numbers)
 
 //Splice() Replacing Elements-
 let names=["John","Jake","Oscar","Lewis"];
 names.splice(1,1,"Lando");
 console.log(names)
-
-
-
-
 
 //SORT METHOD The sort() method sorts an array alphabetically:
 //The difference between toSorted() and sort() is that the first method creates a new array, 

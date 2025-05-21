@@ -1,79 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <div>JAVA SCRIPT OBJECTS</div>
+  <div>JAVA SCRIPT OBJECTS</div>
 
-<script>
-let person={
-    name:"Shalyne",
-    age:32,
-    height:"168cm",
-    job:"Software Developer",
-    isMarried:false,
-    "full address":"Kisumu"
-}
+  <script>
+    let person = {
+      name: "Shalyne",
+      age: 32,
+      height: "168cm",
+      job: "Software Developer",
+      isMarried: false,
+      "full address": "Kisumu"
+    }
 
-console.log(person.job)
-let height=person.height//use of . notation
-console.log(height)
-console.log(person["age"]) //use of bracket notation.
-console.log(person["full address"])
-
-
-</script>
-<script>
-let person1={
-    name:"Shalyne",
-    age:32,
-    height:"168cm",
-    job:"Software Developer",
-    isMarried:false,
-    "full address":"Kisumu"
-}
-let key="name"
-console.log(person1.key)// will start looking for a key which is not there. cant use.notation and use the keys
-console.log(person1[key])////use of bracket notation
+    console.log(person.job)
+    let height = person.height//use of . notation
+    console.log(height)
+    console.log(person["age"]) //use of bracket notation.
+    console.log(person["full address"])
 
 
-//NESTED OBJECT: COMPLICATED ONE CHECK ARRAYS AND APPLY INDEXES TO SEE "THANKS FOR SHARING"
-let user = {
-        name: "Alice",
-        hobbies: ["cycling", "painting"],
-        posts: [
-          {
-            id: 1,
-            title: "My first post",
-            comments: [
-              { id: 101, text: "Great post!" },
-              { id: 102, text: "Thanks for sharing." },
-            ],
-          },
-          {
-            id: 2,
-            title: "Another day",
-            comments: [],
-          },
-        ],
-      };
-      console.log(user.posts[0].comments[1].text)
+  </script>
+  <script>
+    let person1 = {
+      name: "Shalyne",
+      age: 32,
+      height: "168cm",
+      job: "Software Developer",
+      isMarried: false,
+      "full address": "Kisumu"
+    }
+    let key = "name"
+    console.log(person1.key)// will start looking for a key which is not there. cant use.notation and use the keys
+    console.log(person1[key])////use of bracket notation
 
-    let keys=Object.keys(user)
-    let values=Object.values(user)
-    let entries=Object.entries(user)
+
+    //NESTED OBJECT: COMPLICATED ONE CHECK ARRAYS AND APPLY INDEXES TO SEE "THANKS FOR SHARING"
+    let user = {
+      name: "Alice",
+      hobbies: ["cycling", "painting"],
+      posts: [
+        {
+          id: 1,
+          title: "My first post",
+          comments: [
+            { id: 101, text: "Great post!" },
+            { id: 102, text: "Thanks for sharing." },
+          ],
+        },
+        {
+          id: 2,
+          title: "Another day",
+          comments: [],
+        },
+      ],
+    };
+    console.log(user.posts[0].comments[1].text)
+
+    let keys = Object.keys(user)
+    let values = Object.values(user)
+    let entries = Object.entries(user)
     console.log(keys)
     console.log(values)
     console.log(entries)
 
+    let company = {
+      name: "TechNova Inc.",
+      founded: 2012,
+      departments: {
+        engineering: {
+          head: {
+            name: "Alice Johnson",
+            position: "VP of Engineering",
+          },
+          teams: {
+            frontend: {
+              lead: "Bob Smith",
+              members: [
+                {
+                  name: "Carol",
+                  role: "Senior Developer",
+                  skills: {
+                    js: true, react: true,
+                    vue: false, db: [
+                      {
+                        postgresql: false,
+                        nosql: {
+
+                          mongodb: ["True", {
+                            learning: false,
+                          }]
+
+                        }
+                      }
+                    ]
+                  },
+                },
+                {
+                  name: "David",
+                  role: "Junior Developer",
+                  skills: { js: 1, react: 2, vue: 3 },
+                },
+              ],
+            },
+            backend: {
+              lead: "Eve Black",
+              members: [
+                {
+                  name: "Frank",
+                  role: "Senior Backend Dev",
+                  languages: ["Python", "Go", "Node.js"],
+                },
+                {
+                  name: "Grace",
+                  role: "DevOps",
+                  certifications: {
+                    aws: true,
+                    docker: true,
+                    kubernetes: true,
+                  },
+                },
+              ],
+            },
+          },
+        },
+
+      },
+
+    };
+
+//Display False in Learning
+    console.log(company.departments.engineering.teams.frontend.members[0].skills.db[0].nosql.mongodb[1].learning);
+
+//Display Node.js in Languages    
+    console.log(company.departments.engineering.teams.backend.members[0].languages[2]);
+
+//Display True In Docker    
+    console.log(company.departments.engineering.teams.backend.members[1].certifications.docker);
+
+//Display the Keys on Certifications and its Length
+  let Keys=Object.keys(company.departments.engineering.teams.backend.members[1].certifications);    
+  console.log(Keys);
+  let key_count=keys.length
+  console.log(key_count)
+
+//Display the values only of skills
+    let Values =Object.values(company.departments.engineering.teams.frontend.members[1].skills);
+    console.log(Values.reverse())
 
 
-</script>
+
+  </script>
 
 
 
 </body>
+
 </html>

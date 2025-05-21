@@ -16,6 +16,7 @@ HOW TO DECLARE VARIABLES USE; THE BELOW
 JS DATA TYPES: Strings,Numbers,Booleans,
 
 JAVA SCRIPT ARRAYS:
+ARRAY-NAMED CONTAINER USED TO STORE MULTIPLE VALUES OF DIFFERENT TYPES 
     -An array is a special variable/data structure used to store/hold more than 1 value at a time.-This array is equivalent to a list in PYTHON.
         PROPERTIES:
             1.-they are ordered.-elements can be accessed with index which is 0-based.
@@ -33,7 +34,7 @@ ARRAY- ONE DIMENSIONAL (1DR) =[1,2,"JOHN DOE"]
 ^& MULTIDIMENSIONAL(2DRA)=
 
                     ARRAY OPERATIONS
-    -Actions that can be perfomed to manipulate arrays/This operations can range from creating arrays,updating values, adding or removing values e.tc        
+    -Actions that can be perfomed/TAKEN to manipulate arrays/This operations can range from creating arrays,updating values, adding or removing values e.tc        
    1. Accessing Elements in an array      
    2. Update or Modify elements in an array- use indexes
    3. Checked the size of an array
@@ -83,16 +84,31 @@ WHY USE OBJECTS/DICT INSTEAD OF ARRAYS:
 OBJECTS can be created in 2 ways:
     1.Object literal Syntax like the first one in the objects.html/creates key value pairs-RECOMMENDED ONE
     2.Using Object Constructor- built in object() constructor
-ACCESSING PROPERTIES:
+
+ACCESSING PROPERTIES:/VALUES 
     1.Using dot(.)notation-
     advantage:simpler-
+    e.g let person{
+        name:"John"
+        age:25
+    }
+    person.name
+    person.age
     disadvantage: cant access values whose keys are in string form and are spaced e.g full name:"Akinyi"
 
-    2.uing bracket notation-dynamic
-    object["key"]-can access any key
+
+    2.using bracket notation-dynamic where if Key has a space one must access using bracket Notation
+    object["key"]-can access any key even when the values have spaces
+    person["name"]
+    person["full address" ]
+
 
 OBJECT METHODS-Operations you can carry out on an object
-Object.keys(object)  - will see name of the keys
-Object.values(object) -will see the values of your properties
-Object.entries(object) - key value pairs- all properties
+Object.keys(object)  - returns the names of the keys in string form in an array.
+Object.values(object) -returns the values of the object in an array
+Object.entries(object) - returns key value pairs- all properties-returns an array or arrays
 N/B all data above is stored in ARRAYS
+
+
+HOW TO UPDATE VALUES 
+        person["name"]="jane";
