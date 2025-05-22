@@ -125,11 +125,11 @@ HOW TO UPDATE VALUES
 
 
     OPTIONAL CHAINING-tying to make the uncaught error to undefined error
-        -This is a feature that allows you to safely access deeply nested properties of an object without worrying of part of the chain is null or undefined.
+        -This is a feature that allows you to safely access deeply nested properties of an object without worrying if part of the chain is null or undefined.
 
+      -Instead of throwing an error when you try to access a null/undefined property optional chaining returns undefined immediately and stops uses this symbol(?)  
 
-
-
+   Once OPTIONAL CHAINING ENCOUNTERS THE FIRST INSTANCE OF NULL/UNDEFINED IT STOPS AT THAT POINT.   
 
     TYPE OF ERRORS ON JAVA SCRIPT FRAMEWORKS 
    UNCAUGHT TYPE ERROR CANNOT READ PROPERTIES....
@@ -138,3 +138,25 @@ HOW TO UPDATE VALUES
 
     UN DEFINED
     //Tried accessing a value using a wrong key or undefined key that is not there and then you stopped there.
+
+
+                    SPREAD OPERATOR
+    Feature that allows you to spread /expand/unpack elements of an iterable(something that can be looped through) e.g arrays, objects,strings USES (...)
+         
+    1.Copy Arrays
+    2.Merging Arrays 
+    3.Copy Objects
+    4.Merging Objects       
+
+                        OPERATORS
+-Symbols or key words used to perform operations on values/variables
+
+             TYPES OF OPERATORS 
+          -Arithmetic- e.g:+, -, /, *, %, **,++, --
+          -Comparison- e.g: <,>,==,>=,<=,!- 
+             ===(strict Equality Operator)-Checks for the value and type 
+            !==(strict Inequality Operator)-Checks for the value and type 
+          -Assignment- e.g: =, +=, -=,/=,*=.**=,%=,
+          -logical - e.g:   AND-Returns True if all conditions are true,(&&)
+                            OR-Returns True if atleast 1 is true,(||) 
+                            NOT-returns the opposite value- BOOLEAN(!)      

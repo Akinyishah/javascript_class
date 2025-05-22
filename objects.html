@@ -165,24 +165,53 @@ let car={
   past_owners:{
     first:"Kevin",
     second:"Trevor",
-    third:"jane",
+    third:null,
     fourth:{
       owner1:"John",
       owner2:"Anne"
     }
   }
 }
-console.log(car.past_owners.fifth)
+console.log(car.past_owners.fourth.owner1)
+
+//Use of SPREAD OPERATOR(...) COPY ARRAYS
+ let num=[1,2,3,4,5]
+ let num2=[...num]
+ console.log(num2)
+
+ //Use of SPREAD OPERATOR(...) MERGING ARRAYS
+
+ let pass=[5,6,7,8,9.10]
+ let pass1=[11,12,13,14]
+ let pass3=[...pass,...pass1]
+ console.log(pass3)
 
 
+ //Use of SPREAD OPERATOR(...) COPYING OBJECTS
+let table ={
+  height:"170cm",
+  width:"90cm"
+}
 
+let table2={
+  ...table
+}
+console.log(table2)
 
-
-
-
-
-
-
+ 
+ //Use of SPREAD OPERATOR(...) MERGING OBJECTS
+let table1={
+  heigh:"200cm",
+  width:"120cm"
+}
+let table3={
+  color:"Grey",
+  condition:"new"
+}
+let table4={
+  ...table1,...table3
+}
+console.log(table4)
 
 
 
