@@ -112,3 +112,29 @@ N/B all data above is stored in ARRAYS
 
 HOW TO UPDATE VALUES 
         person["name"]="jane";
+
+        TYPE CASTING 
+-Explicitly Changing the data type of a value from one to another.
+    1.Number:
+        a} Number()
+        b} ParseInt()
+        c} ParseFloat()
+    2.String:
+    a}String()
+    b}toString()     
+
+
+    OPTIONAL CHAINING-tying to make the uncaught error to undefined error
+        -This is a feature that allows you to safely access deeply nested properties of an object without worrying of part of the chain is null or undefined.
+
+
+
+
+
+    TYPE OF ERRORS ON JAVA SCRIPT FRAMEWORKS 
+   UNCAUGHT TYPE ERROR CANNOT READ PROPERTIES....
+   //you went from car, past onwers then got lost on .fifth not there and you still went further yet its an error.
+    -You got to undefined point or A WRONG KEY and still went further to try and access other nested objects.
+
+    UN DEFINED
+    //Tried accessing a value using a wrong key or undefined key that is not there and then you stopped there.
