@@ -124,7 +124,7 @@ HOW TO UPDATE VALUES
     b}toString()     
 
 
-    OPTIONAL CHAINING-tying to make the uncaught error to undefined error
+    OPTIONAL CHAINING-tying to make the uncaught error to undefined error(USE OF TERBARY OPERATOR)
         -This is a feature that allows you to safely access deeply nested properties of an object without worrying if part of the chain is null or undefined.
 
       -Instead of throwing an error when you try to access a null/undefined property optional chaining returns undefined immediately and stops uses this symbol(?)  
@@ -153,10 +153,54 @@ HOW TO UPDATE VALUES
 
              TYPES OF OPERATORS 
           -Arithmetic- e.g:+, -, /, *, %, **,++, --
-          -Comparison- e.g: <,>,==,>=,<=,!- 
+          -Comparison/comparing values - e.g: <,>,==,>=,<=,!- 
              ===(strict Equality Operator)-Checks for the value and type 
             !==(strict Inequality Operator)-Checks for the value and type 
           -Assignment- e.g: =, +=, -=,/=,*=.**=,%=,
-          -logical - e.g:   AND-Returns True if all conditions are true,(&&)
-                            OR-Returns True if atleast 1 is true,(||) 
-                            NOT-returns the opposite value- BOOLEAN(!)      
+          -logical - e.g:   AND-Returns True if all conditions are true, (&&)
+                            OR-Returns True if atleast 1 is true, (||) 
+                            NOT-returns the opposite value- BOOLEAN (!)      
+
+    POLYMORPHISIM-Taking more than 1 form e.g:
+    -Called operator overloading
+    + means ADD & also means concat(combine strings )    that is why string and number on js will concat the 2 values 
+
+    /, *, ** signs will returns Numbers because this dont have any other functions except only for arithmetic operations they are unique to arithmetic operations.( they are not overloaded)
+
+
+                                COMPARISON OPERATORS:
+thEY RETURN bOOLEAN VALUES - like Truth Values
+
+===(strict Equality Operator)-Checks for the value and type & !==(strict Inequality Operator)
+        - Checking for comparison in both values and data types 
+        ==loose equality Operator
+
+    1.STRICT EQUALITY TO RETURN TRUE  OPERANDS HAVE TO BE EQUAL IN BOTH VALUE AND DATA TYPE. 
+    2.STRICT INEQUALITY CHECKS THAT THEY DONT HAVE TO BE EQUAL IN BOTH DATA TYPE AND VALUE
+
+                        ASSIGNMENT OPERATORS:
+    +=(adds and assigns at the same time/at one go)- COMPOUDN ASSIGNEMNET
+    -=(subtrcats and assigns in one go/at the same time ) 
+
+                     CONDITIONAL STATEMENTS:
+    -They allow your program to make decisions based on whether a condition is true or false or whether the condition is met or not.
+     1.IF... ELSE IF....ELSE
+        IF -covers the first condition if its met instruction under IF  executes
+        ELSE: Excecutes when condition specified is not MET.
+    IF
+    ...../First condition(If not met move to the next e.g)
+    ELSE IF
+    ....../second condition
+    ELSE
+    ...../Excecute when NONE of the above conditions are MET    
+CONDITIONAL STATEMENTS IN JS ARE WRITTEN IN BLOCK FORM
+{}
+
+if (condition){
+    statement to execute
+}
+
+//``(called backticks)-EQUIVALENT TO Fstring on PYTHON Use of backticks and use $ sign
+
+     2.TERNARY OPERATOR -?  -Short-hand for IF ELSE                
+
