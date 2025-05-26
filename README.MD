@@ -203,4 +203,6 @@ if (condition){
 //``(called backticks)-EQUIVALENT TO Fstring on PYTHON Use of backticks and use $ sign
 
      2.TERNARY OPERATOR -?  -Short-hand for IF ELSE                
-
+        -This is a short-hand for writting IF....ELSE statement in J.S
+        (only handles 2 conditions to be met if and else only that 2 options)
+        SYNTAX= condition ? expression _if_true(means condition is met) : expression_if_false(condition not met)
