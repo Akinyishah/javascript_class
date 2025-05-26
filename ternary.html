@@ -22,11 +22,26 @@
         let driver = age>=18 ? "old enough to drive" : "not of age"
         console.log(driver)
 
-        
+
 //Checking if number is even or odd
         let number=prompt('enter a random interger: ')
         let even=number %2==0 ? "Even Number" :"Odd Number"
         console.log(even)
+
+// using a ternary operator check if a number is positive , take users input using prompt.
+        let num=prompt('enter your number: ')
+        let positive =num>0 ? "Number is positive":"Number is negative"
+        console.log(positive)
+
+//using ternary operator check if a string is empty
+        let str=prompt('enter string')
+        let empty= str ===""? "string empty":"string not empty"
+        console.log(empty)     
+
+//using ternary operator check if a variable is null /strict equality checks for both value and type data types 
+        let num5 = prompt('enter number')
+        let result =num5 ===null? "null ":"not a null "
+        console.log(result)
 
 
     </script>

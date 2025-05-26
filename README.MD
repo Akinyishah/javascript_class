@@ -206,3 +206,19 @@ if (condition){
         -This is a short-hand for writting IF....ELSE statement in J.S
         (only handles 2 conditions to be met if and else only that 2 options)
         SYNTAX= condition ? expression _if_true(means condition is met) : expression_if_false(condition not met)
+
+        LOOPING/ITERATION
+-Repetition of a block of code until a specified condition is met ?
+    1. Perform repetitive task efficiently 
+    2. Parse through large amounts of data e.g in an array.
+    
+                        TYPES OF LOOPS 
+    1.For Loops-knows how many times you are going to loop through an array or object (known number of loops)
+    2.do while- will execute at least once before checking the condition 
+    3.while- checks for the conditione before executing (unknown number of loops )
+
+                 BASIC STRUCTURE OF A LOOP
+         1. Have an initialization- the starting point 
+         2. condition- condition  for the loop to continue
+         3.Update-update values in the loop        
+
