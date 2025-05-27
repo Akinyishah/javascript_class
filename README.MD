@@ -220,5 +220,21 @@ if (condition){
                  BASIC STRUCTURE OF A LOOP
          1. Have an initialization- the starting point 
          2. condition- condition  for the loop to continue
-         3.Update-update values in the loop        
+         3.Update-update values in the loop    
+        
 
+        FUNCTIONS
+  Reusable block of codes designed to perform specific tasks     
+             WHY USE FUNCTIONS:
+    1. For Reusability
+    2. For readability-organization
+    3.Minimize repetition.
+    4.For Modularity- break of code in small chunks helps in debugging , find errors and read easily.
+
+SYNTAX OF FUNCTION-
+    //Function Definition
+    function  function_name (){
+                block to be executed
+}
+    functioncall
+    function_name()
