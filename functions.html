@@ -23,14 +23,12 @@
         let numbers=[1,2,3,4]
         display_value(numbers)
 
-//Write a java script function that can take any number and output its cube
-
 //write a java script function that can reverse a number
-        // let number =123454
-        // string_num = String(number).split('').reverse().join('')
-        // reversed_number=parseInt(string_num)
-        // console.log(string_num)
-        // console.log(typeof(reversed_number))
+        let number =123454
+        string_num = String(number).split('').reverse().join('')
+        reversed_number=parseInt(string_num)
+        console.log(string_num)
+        console.log(typeof(reversed_number))
 
         // function reversed_number(number){
         //     let string_num = String(number).split('').reverse().join('')
@@ -52,9 +50,20 @@ function cube_output(){
 cube_output()
 
 //1.write a java script that can arrange a random string in alphabetical order
+function arrangestralphabetically(str){
+    let word=str.split('')
+    let sortword=word.sort((a,b) => a.localeCompare(b));
+    return sortword.join('');
+}
+    let randomstr="python";
+    let sortedstr=arrangestralphabetically(randomstr);
+    console.log(sortedstr)
+arrangestralphabetically()    
+
 
 //2.write a java script function that accepts a string as a parameter and converts the first letter 
 //of each word of the string in upper case
+
 //3.Write a java script program to calculate multiplication and divison of two numbers   
 //4.write a java script program that accepts two intergers and display the largest               
 
