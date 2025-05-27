@@ -11,15 +11,12 @@
 // Prompt the user for a number either on a form input or the terminal. 
 // Depending on whether the number is even or odd, display  either “odd” or “even” to the user.
 // Hint: how does an even / odd number react differently when divided by 2?        
-function function_number(){
-    
+
+function number_type(){
+    let number=parseFloat(prompt('enter a number: '))
+    let even=number % 2==0 ? "Even":"Odd"
+    console.log(even)
 }
-
-
-
-
-     let number=prompt('enter a random interger: ')
-        let even=number %2==0 ? "Even Number" :"Odd Number"
-        console.log(even)
-    </script>
+number_type()
+</script>
 </html>

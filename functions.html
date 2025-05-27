@@ -32,20 +32,27 @@
         // console.log(string_num)
         // console.log(typeof(reversed_number))
 
-        function reversed_number(number){
-            let string_num = String(number).split('').reverse().join('')
-            let reversed_number=parseInt(string_num)
-            return reversed_number
-        }
-        let number =98765
-        let reversed_number=reversed_number(number)
-        console.log(reversed_number)
+        // function reversed_number(number){
+        //     let string_num = String(number).split('').reverse().join('')
+        //     let reversed_number=parseInt(string_num)
+        //     return reversed_number
+        // }
+        // let number =98765
+        // let reversed_number=reversed_number(number)
+        // console.log(reversed_number)
 
 
                         //TASK FUNCTIONS
-//Write a java script function that can take any number and output its cube                        
-//Slide 80 from 1-10
+//Write a java script function that can take any number and output its cube 
+function cube_output(){
+    let num=parseInt(prompt('Enter number: '))
+    let cube=num **3
+    console.log(cube)
+}   
+cube_output()
+
 //1.write a java script that can arrange a random string in alphabetical order
+
 //2.write a java script function that accepts a string as a parameter and converts the first letter 
 //of each word of the string in upper case
 //3.Write a java script program to calculate multiplication and divison of two numbers   
