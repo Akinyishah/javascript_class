@@ -238,3 +238,9 @@ SYNTAX OF FUNCTION-
 }
     functioncall
     function_name()
+
+    ARROW FUNCTIONS 
+    -Shorter way to write functions in java script.
+    use: const function_name=()=>{
+        
+    }

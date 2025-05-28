@@ -50,27 +50,55 @@ function cube_output(){
 cube_output()
 
 //1.write a java script that can arrange a random string in alphabetical order
-function arrangestralphabetically(str){
-    let word=str.split('')
-    let sortword=word.sort((a,b) => a.localeCompare(b));
-    return sortword.join('');
+function alphabet(str){
+    let entry=String(str).split('').sort().join();
+    return entry;
 }
-    let randomstr="python";
-    let sortedstr=arrangestralphabetically(randomstr);
-    console.log(sortedstr)
-arrangestralphabetically()    
-
-
+    let str=prompt('Enter alp string: ');
+    let entry=alphabet(str);
+    console.log(entry)
+   
 //2.write a java script function that accepts a string as a parameter and converts the first letter 
 //of each word of the string in upper case
+    function make_title(str){
+        let title=String(str).split('')[0].toUpperCase() + String(str).slice(1)
+        return title
+    } 
+    let randomstr=prompt('Enter random str: ')   
+    title=make_title(randomstr)
+    console.log(title) 
+
+    let sentence= prompt("Enter sentence string: ");
+    let arr=sentence.split(' ');
+    for(i=0; i<arr.length; i++){
+        let upper=String(arr[i]).slice(0,1).toUpperCase() + String(arr[i]).slice(1).toLowerCase();
+        arr[i]=upper
+    }
+    console.log(arr)
+
 
 //3.Write a java script program to calculate multiplication and divison of two numbers   
-//4.write a java script program that accepts two intergers and display the largest               
+//4.write a java script program that accepts two intergers and display the largest     
+//5.Write a java script function to clone /duplicate an array 
+//Cloning is like a form of copying
+//Scenario 1- Not creating a new array here 
+let x =[1,2,3,4,5] //array x is stored in RAM-memory
+let y=x            //it referenced the same memomr in x above
+console.log(y===x)//TRUE- cause of same memory location.
+
+
+//scenario 2
+let a=[1,2,3,4,5]
+let b=[1,2,3,4,5]  
+console.log(a===b)  //FALSE- because different memory location
+
+//CLONE/DUPLICATE.should not share MEMORY LOCATION WHERE IT SHOULD BE FASLE.
+let array=[1,2,3,4,5]
 
 
 
 
 
-    </script>
+</script>
 </body>
 </html>
