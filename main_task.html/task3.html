@@ -15,9 +15,9 @@
 // e.g if a user enters “0112345678”, the program should display “+254112345678”
 // e.g if a user enters “712345678”, the program should display “+254712345678”
  let cell_number=prompt('Enter your cell Number: ')
- if (cell_number[0,4]==='+254' && length(cell_number)===13){
+ if (cell_number[0,4]==='+254' && cell_number.lengt ===13){
     console.log(`${cell_number} is a valid cellNumber`);
- } else if(cell_number[0,2]==='07' && length(cell_number)===10){
+ } else if(cell_number[0,2]==='07' && cell_number.length ===10){
     cell_number='+274' + cell_number[1]
     console.log(`${cell_number}is a valid CellNumber`)
  }
