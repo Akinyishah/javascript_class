@@ -21,7 +21,14 @@ function total_stock(){
         
     ]
 }
-
+for p in prods:
+         p[-1] = int(p[-1])
+print(prods)
+total_stocks=0  #having this if we want it count itself from 1 item/element to the next.
+for p in prods:
+        quantity=p[-1]
+        total_stocks+=quantity        
+print(total_stocks)
     </script>
 </body>
 </html>
