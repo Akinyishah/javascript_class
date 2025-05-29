@@ -12,7 +12,7 @@
 // the stock is the last digit in every array/list.
 // prods = [[‘omo’,’30kshs’,’300’], [‘milk’,’50kshs’,’200’],[‘bread’,’45kshs’,’359’], [‘coffee’,’5kshs’,’79’]]
 // NB: ONCE YOU COPY AND PASTE THE LIST ABOVE,REWRITE THE SINGLE QUOTES AS THE ABOVE LIST WILL GIVE YOU AN ERROR.
-function total_stock(){
+function calc_total_stock(prods){
     let prod=[
         ['omo','30kshs','300'],
         ['milk','50kshs','200'],
@@ -20,15 +20,17 @@ function total_stock(){
         ['coffee','5kshs','79']
         
     ]
+   let total_stock=0
+     for (let i = 0; i < products.length; i++) {
+    let lastItem = products[i][2]; // Get the last element of each sub-array
+    let lastDigit = parseInt(lastItem.slice(-1)); // Extract the last digit
+    totalStock += lastDigit;
+  }
+  return totalStock
 }
-for p in prods:
-         p[-1] = int(p[-1])
-print(prods)
-total_stocks=0  #having this if we want it count itself from 1 item/element to the next.
-for p in prods:
-        quantity=p[-1]
-        total_stocks+=quantity        
-print(total_stocks)
+let total = calc_total_Stock(prods);
+console.log(`Total stock: ${total}`);
+
     </script>
 </body>
 </html>
