@@ -9,6 +9,25 @@
     <h1>TASK 12 </h1>
     <script>
 //Write a program that prints the largest of 4 inputs taken as input from a user.
+function largest(){
+    let p1=parseFloat(prompt('enter num1: '));
+    let p2=parseFloat(prompt('enter num2: '));
+    let p3=parseFloat(prompt('enter num3: '));
+    let p4=parseFloat(prompt('enter num4: '));
+    if(p1>p2 && p1>p3 && p1>p4){
+        console.log(`${p1} is the largest` );
+
+    } else if(p2>p1 && p2>p3 && p2>p4){
+        console.log(`${p2} is the largest`);
+
+    } else if(p3>p1 && p3>p2 && p3>p4){
+          console.log(`${p3} is the largest`);
+
+    } else{
+        console.log(`${p4} is the largest`)
+    }
+}
+largest()
 
 
     </script>

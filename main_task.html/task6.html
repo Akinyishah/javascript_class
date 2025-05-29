@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>TASK 6</h1>
     <script>
-// Write a program that lets the user input a password. 
-// Give them only 4 attempts to check the passwords entered against “admin@123”. 
-// If the password is correct access is granted. After you show them a message , the account is blocked.        
-function password_access(){
-    let correct_password='admin@123'
-    let attempts=4
-    for(let i=0; i<5; i++){
-        let password=prompt('enter your password: ');
-        if (password===correct_password){
-            console.log('access granted');
-            break;
-        } else if(remaining_attempts=attempts-i){
-            if(remaining_attempts>0){
-                console.log(`wrong password you have ${remaining_attempts} attempts remaining`)
-            } else{
-                console.log('account blocked')
+        // Write a program that lets the user input a password. 
+        // Give them only 4 attempts to check the passwords entered against “admin@123”. 
+        // If the password is correct access is granted. After you show them a message , the account is blocked.        
+        function password_access() {
+            let correct_password = 'admin@123'
+            let attempts = 4
+            for (let i = 0; i < 5; i++) {
+                let password = prompt('enter your password: ')?.trim();
+                if (password === correct_password) {
+                    console.log('access granted');
+                    return;
+                }
+                let remaining_attempts = attempts - i
+                if (remaining_attempts > 0) {
+                    console.log(`wrong password you have ${remaining_attempts} attempts remaining`)
+                } else {
+                    console.log('account blocked')
+                }
             }
         }
-    }
 
-}
-password_access()
+        password_access()
     </script>
 </body>
+
 </html>

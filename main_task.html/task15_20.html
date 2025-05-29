@@ -11,11 +11,17 @@
 15.// Write a program that takes input of someone's basic salary and benefits, 
 // adds them to find the gross salary then uses  the gross salary to find the NHIF. 
 // To find the Kenya NHIF Rate using THIS LINK:          
+function calc_gross_salary(basic,benefits){
+    let gross =basic+benefits
+    return gross
+};
+    let basic_salary=parseFloat(prompt('enter basic salary: '))
+    let benefits=parseFloat(prompt('enter benefits: '))
+    let gross_salary=calc_gross_salary(basic_salary,benefits)
+    console.log(gross_salary)   
+calc_gross_salary()
 
-
-
-
-
+//#calculating NHIF
     </script>
 </body>
 </html>

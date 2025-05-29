@@ -244,3 +244,20 @@ SYNTAX OF FUNCTION-
     use: const function_name=()=>{
         
     }
+            CALL BACK FUNCTIONS
+     -Its a function that you pass as an argument to another function,and that function executes (calls back) -your passed in function later.     
+     PASSING IT AS ARGUMENT TO ANOTHER FUNCTION  check callback.html
+            Research on: asynchronous and synchronous
+
+
+            FUNCTIONS EXPRESSION:
+      -This is when you define a function inside an expression.-statement that evaluates to something(expression) usually by assigning it a variable.   
+      research on: Hoisting- calling the function at the top of the score.code /moving to the top
+
+
+
+
+
+      1 .innerHTML=full HTML content inside atag/element
+      2 .innertext=visible text inside an element
+      3 .value= can only access user input in forms ONLY
