@@ -254,9 +254,23 @@ SYNTAX OF FUNCTION-
       -This is when you define a function inside an expression.-statement that evaluates to something(expression) usually by assigning it a variable.   
       research on: Hoisting- calling the function at the top of the score.code /moving to the top
 
+FORM INPUTS
+    Forms are the primary way users interact with applications.
+    -We need to make our applications interactive and dynamic
+    -JS helps us access and manipulate form inputs real time
 
+  USING JS YOU CAN:
+    -1.Read User Input
+    2.Validate User Input
+    3.Dynamically update pages based on input
 
+  PROCESS:
+  1.User fills the form
+  2.JS reads input values
+  3.JS processes the data (calculations,modifications)
 
+document.getElementById()-method used to select and access 
+a single HTML element by its unique ID attribute      
 
       1 .innerHTML=full HTML content inside atag/element
       2 .innertext=visible text inside an element

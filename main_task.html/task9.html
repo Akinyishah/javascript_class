@@ -15,26 +15,30 @@
 // ***
 // ****
 // *****.....
-function stars(){
-    let stars=parseInt(prompt('enter number of required stars: '))
-    for(let i=1; i<=stars; i++){
-        console.log('*' .repeat(i) );
+// function stars(){
+//     let stars=parseInt(prompt('enter number of required stars: '))
+//     for(let i=1; i<=stars; i++){
+//         console.log('*' .repeat(i) );
 
-    }
-}
-stars()
+//     }
+// }
+// stars()
 
 //METHOD 2
 let num=Number(prompt("enter number"))
 
 function create_stars(num){
-    for(let i=1; i<=num; i++);
-    let row=' '
-    for(let j=1; j<=i; j++)
-    row+='*'
 
+    for(let i=1; i<=num; i++){
+        let row=' '
+    }
+    for(let j=1; j<=i; j++){
+        row +='*'
+    }
+    console.log(row)
 }
-
+create_stars(num)
+console.log(stars)
 
     </script>
 </body>
